@@ -10,6 +10,7 @@ const urduStrings = <String, String>{
   "Expenses & Accounts": "اخراجات اور حساب",
   "Health & Treatment": "صحت اور علاج",
   "Reports": "رپورٹس",
+  "Profile": "پروفائل",
   "Home": "ہوم",
   "Feed": "خوراک",
   "Sales": "فروخت",
@@ -19,6 +20,7 @@ const urduStrings = <String, String>{
   "Farm operations": "فارم کا انتظام",
   "Your records, always at hand.": "آپ کا ریکارڈ، ہر وقت دستیاب۔",
   "Your farm, at a glance": "آپ کے فارم کا خلاصہ",
+  "Rana Naveed Cattle Farm": "رانا نوید کیٹل فارم",
   "A clear view of livestock, feed and daily operations.":
       "جانوروں، خوراک اور روزمرہ کاموں کی مکمل معلومات۔",
   "Unable to load the overview. Please reopen this screen.":
@@ -44,6 +46,8 @@ const urduStrings = <String, String>{
   "Breed": "نسل",
   "Purchase weight kg": "خریداری کا وزن (کلوگرام)",
   "Purchase price Rs": "خریداری کی قیمت (روپے)",
+  "Purchase date": "خریداری کی تاریخ",
+  "Current weight kg": "موجودہ وزن (کلوگرام)",
   "Market / seller": "منڈی / فروخت کنندہ",
   "Tag / breed": "ٹیگ / نسل",
   "Purchase": "خریداری",
@@ -61,6 +65,14 @@ const urduStrings = <String, String>{
   "Record purchase": "خریداری درج کریں",
   "Purchase qty": "خریدی گئی مقدار",
   "Payment": "ادائیگی",
+  "Supplier payment": "سپلائر کو ادائیگی",
+  "Record feed usage": "خوراک کا استعمال درج کریں",
+  "Record usage": "استعمال درج کریں",
+  "Feed usage": "خوراک کا استعمال",
+  "Wastage kg": "ضائع شدہ مقدار (کلوگرام)",
+  "Animal / group": "جانور / گروپ",
+  "Edit feed purchase": "خوراک کی خریداری میں ترمیم",
+  "Edit feed usage": "خوراک کے استعمال میں ترمیم",
   "Weight & growth records": "وزن اور بڑھوتری کا ریکارڈ",
   "Starting weight, current weight, gains and growth progress.":
       "ابتدائی وزن، موجودہ وزن، اضافے اور بڑھوتری کی تفصیل۔",
@@ -70,6 +82,9 @@ const urduStrings = <String, String>{
   "Gain": "وزن میں اضافہ",
   "Average growth": "اوسط بڑھوتری",
   "Not enough data": "معلومات ناکافی ہیں",
+  "Add weight record": "وزن کا ریکارڈ شامل کریں",
+  "Add weight": "وزن شامل کریں",
+  "Edit weight record": "وزن کے ریکارڈ میں ترمیم",
   "Factory name, sale weight, rate, deductions and payment.":
       "فیکٹری کا نام، فروخت کا وزن، نرخ، کٹوتیاں اور ادائیگی۔",
   "Log factory sale": "فیکٹری فروخت درج کریں",
@@ -77,6 +92,10 @@ const urduStrings = <String, String>{
   "Animal ID": "جانور کا شناختی نمبر",
   "Sale weight kg": "فروخت کا وزن (کلوگرام)",
   "Payment received": "وصول شدہ رقم",
+  "Sale date": "فروخت کی تاریخ",
+  "Transport cost": "ٹرانسپورٹ کا خرچ",
+  "Commission": "کمیشن",
+  "Edit factory sale": "فیکٹری فروخت میں ترمیم",
   "Factory": "فیکٹری",
   "Date": "تاریخ",
   "Sale weight": "فروخت کا وزن",
@@ -86,6 +105,7 @@ const urduStrings = <String, String>{
   "Cash paid/received, labour, doctor, transport and other expenses.":
       "نقد ادائیگی و وصولی، مزدوری، ڈاکٹر، ٹرانسپورٹ اور دیگر اخراجات۔",
   "Add expense": "خرچ درج کریں",
+  "Edit expense": "خرچ میں ترمیم",
   "Category": "قسم",
   "Description": "تفصیل",
   "Amount Rs": "رقم (روپے)",
@@ -95,6 +115,7 @@ const urduStrings = <String, String>{
   "Keep a dated record of treatments, medicine and doctor fees.":
       "علاج، ادویات اور ڈاکٹر کی فیس کا تاریخ وار ریکارڈ رکھیں۔",
   "Add treatment": "علاج درج کریں",
+  "Edit treatment": "علاج میں ترمیم",
   "Treatment / medicine": "علاج / دوا",
   "Notes": "نوٹس",
   "Cost Rs": "لاگت (روپے)",
@@ -116,6 +137,7 @@ const urduStrings = <String, String>{
   "Purchase cost": "خریداری کی لاگت",
   "Enter the record details below.": "ذیل میں ریکارڈ کی تفصیلات درج کریں۔",
   "Save record": "ریکارڈ محفوظ کریں",
+  "Update record": "ریکارڈ اپ ڈیٹ کریں",
   "Saving…": "محفوظ ہو رہا ہے…",
   "Cancel": "منسوخ کریں",
   "Could not save. Check the values and use a unique animal tag.":
@@ -123,6 +145,14 @@ const urduStrings = <String, String>{
   "Enter a valid positive number.": "درست غیر منفی عدد درج کریں۔",
   "No records yet": "ابھی کوئی ریکارڈ نہیں",
   "New records will appear here.": "نیا ریکارڈ یہاں نظر آئے گا۔",
+  "Actions": "کارروائیاں",
+  "Edit": "ترمیم",
+  "Delete": "حذف کریں",
+  "Edit animal": "جانور میں ترمیم",
+  "Delete record?": "ریکارڈ حذف کریں؟",
+  "This record will be permanently deleted.":
+      "یہ ریکارڈ مستقل طور پر حذف ہو جائے گا۔",
+  "Record deleted.": "ریکارڈ حذف ہو گیا۔",
   "Silage": "سائیلیج",
   "Wanda": "ونڈا",
   "Chokar": "چوکر",
@@ -135,6 +165,13 @@ const urduStrings = <String, String>{
   "Language": "زبان",
   "Could not save language. Please try again.":
       "زبان محفوظ نہیں ہو سکی۔ دوبارہ کوشش کریں۔",
+  "Farm owner and contact information.": "فارم کے مالک اور رابطے کی معلومات۔",
+  "Rana Naveed": "رانا نوید",
+  "Farm owner": "فارم کے مالک",
+  "Phone number": "فون نمبر",
+  "Alternate phone number": "متبادل فون نمبر",
+  "Address": "پتہ",
+  "Pakistan time": "پاکستانی وقت",
 };
 
 String translate(BuildContext context, String source) {
@@ -153,6 +190,9 @@ String translate(BuildContext context, String source) {
   }
   if (RegExp(r'^[0-9]+ head$').hasMatch(source)) {
     return source.replaceFirst(' head', ' جانور');
+  }
+  if (source.endsWith(' • Pakistan time')) {
+    return source.replaceFirst('Pakistan time', 'پاکستانی وقت');
   }
   return source;
 }

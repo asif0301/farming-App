@@ -38,7 +38,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('اردو'));
     await tester.pumpAndSettle();
-    expect(find.text('آپ کے فارم کا خلاصہ'), findsOneWidget);
+    expect(find.text('رانا نوید کیٹل فارم'), findsOneWidget);
     expect(
       Directionality.of(tester.element(find.byType(AppBar))),
       TextDirection.rtl,
@@ -49,7 +49,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('English'));
     await tester.pumpAndSettle();
-    expect(find.text('Your farm, at a glance'), findsOneWidget);
+    expect(find.text('Rana Naveed Cattle Farm'), findsOneWidget);
     expect(
       Directionality.of(tester.element(find.byType(AppBar))),
       TextDirection.ltr,
